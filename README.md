@@ -2,10 +2,14 @@
 
 AtCoder等の競技プログラミングで使うためのスニペット、ライブラリや実装例（C++17）。
 
+&nbsp;
+
 ## テンプレート
 
 - [ACLを使う場合](./templates/main_acl.cpp)
 - [ACLを使わない場合](./templates/main.cpp)
+
+&nbsp;
 
 ## 入出力
 
@@ -18,6 +22,8 @@ AtCoder等の競技プログラミングで使うためのスニペット、ラ�
 
 - [値を出力する](./in_out/cout.cpp)
 - [小数点を含む数値を出力する](./in_out/printf.cpp)
+
+&nbsp;
 
 ## 文字列
 
@@ -40,6 +46,8 @@ AtCoder等の競技プログラミングで使うためのスニペット、ラ�
 - [文字列Sと文字列Tが部分列として後ろから何文字含まれているかを返す](./string/count_common_suffix_subsequence.cpp)
 - [i 文字目以降で最初に文字 c が登場する index を管理する配列を返す](./string/calc_next.cpp)
 
+&nbsp;
+
 ## 配列
 
 - [配列を回転させる](./array/rotate.cpp)
@@ -47,14 +55,20 @@ AtCoder等の競技プログラミングで使うためのスニペット、ラ�
 - [座標圧縮](./array/coordinate_compression.cpp)
 - [配列のある箇所から8方向チェックする例](./array/check_vector.cpp)
 
+&nbsp;
+
 ## 変換
 
 - [文字列を数値に変換する](./convert/stoi.cpp)
 - [数値を文字に変える](./convert/get_char.cpp)
 
+&nbsp;
+
 ## 日付・時間
 
 - [うるう年判定](./datetime/is_leap_year.cpp)
+
+&nbsp;
 
 ## 並べ替え
 
@@ -62,9 +76,13 @@ AtCoder等の競技プログラミングで使うためのスニペット、ラ�
 - [比較関数を使った並び替え](./sort/comparison_function.cpp)
 - [比較関数（ラムダ式）を使った並び替え](./sort/comparison_function_lambda.cpp)
 
+&nbsp;
+
 ## 再帰関数
 
 -[全パターン列挙 – N人をTのグループに分ける](./recursion/enumerate_all_patterns.cpp)
+
+&nbsp;
 
 ## 探索
 
@@ -85,12 +103,16 @@ AtCoder等の競技プログラミングで使うためのスニペット、ラ�
 
 - [しゃくとり法](./search/shakutori.cpp)
 
+&nbsp;
+
 ## 累積和・いもす法
 
 - [累積和](./prefix_sum/prefix_sum.cpp)
 - [2次元累積和](./prefix_sum/prefix_sum_2d.cpp)
 - [いもす法](./prefix_sum/imos.cpp)
 - [2次元いもす法](./prefix_sum/imos_2d.cpp)
+
+&nbsp;
 
 ## データ構造
 
@@ -124,6 +146,8 @@ AtCoder等の競技プログラミングで使うためのスニペット、ラ�
 
 - [区間の最大値を求める(一点更新・区間最大値)](./data_structure/rmq.cpp)
 - [区間の合計を求める(一点更新・区間合計)](./data_structure/rsq.cpp)
+
+&nbsp;
 
 ## グラフ
 
@@ -172,6 +196,8 @@ AtCoder等の競技プログラミングで使うためのスニペット、ラ�
 - [最小費用流問題（ACL)](./graph/min_cost_flow_acl.cpp)
 - [二部マッチング問題](./graph/bipartite_matching.cpp)
 - [二部マッチング問題（ACL）](./graph/bipartite_matching_acl.cpp)
+
+&nbsp;
 
 ## 数学
 
@@ -253,11 +279,15 @@ AtCoder等の競技プログラミングで使うためのスニペット、ラ�
 - [数独を解く](./math/sudoku.cpp)
 - [覆面算](./math/fukumenzan.cpp)
 
+&nbsp;
+
 ## ゲーム
 
 ### トーナメント
 
 - [2^N 人が参加するトーナメントで M 回戦目に当たる可能性のある人を列挙する](./game/tournament.cpp)
+
+&nbsp;
 
 ## ヒューリスティック
 
