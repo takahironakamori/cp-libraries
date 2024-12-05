@@ -54,6 +54,7 @@ AtCoder等の競技プログラミングで使うためのスニペット、ラ�
 - [配列を回転させる](./array/rotate.cpp)
 - [余計な「.」を取り除く](./array/shape_up.cpp)
 - [座標圧縮](./array/coordinate_compression.cpp)
+- [連長圧縮する（{a,a,a,a,b,b,b,c} -> a 4 b 3 c 1）](./array/length_encode_array.cpp)
 - [配列のある箇所から8方向チェックする例](./array/check_vector.cpp)
 
 &nbsp;
