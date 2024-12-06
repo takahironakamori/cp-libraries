@@ -62,7 +62,8 @@ AtCoder等の競技プログラミングで使うためのスニペット、ラ�
 ## 変換
 
 - [文字列を数値に変換する](./convert/stoi.cpp)
-- [数値を文字に変える](./convert/get_char.cpp)
+- [数値を文字に変換する](./convert/get_char.cpp)
+- [char を string に変換する](./convert/char_to_string.cpp)
 
 &nbsp;
 
