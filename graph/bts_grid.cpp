@@ -14,7 +14,7 @@ const int INF = 1001001001;
 int main() {
   int H, W;
   cin >> H >> W;
-  vector<strinßg> graph(H);
+  vector<string> graph(H);
   vector<vector<int>> dist(H, vector<int>(W, INF));
 
   vector<int> dy = {-1, 0, 1, 0};
