@@ -141,6 +141,7 @@ AtCoder等の競技プログラミングで使うためのスニペット、ラ�
 
 - [Fenwick Tree（ACL）](./data_structure/bit_acl.cpp)
 - [Fenwick Tree で転倒数を数える（ACL）](./data_structure/count_inversion_number.cpp)
+- [Fenwick Tree インデックス以下の最大値を取得する例](./data_structure/bit_max.cpp)
 
 ### ダブリング
 
