@@ -253,6 +253,7 @@ AtCoder等の競技プログラミングで使うためのスニペット、ラ�
 
 - [ルートを計算する](./math/sqrt.cpp)
 - [べき乗（累乗）を計算する](./math/pow.cpp)
+- [べき乗（累乗）を計算する(自作関数)](./math/my_pow.cpp)
 - [a の b 乗を mod で割ったあまりを計算する](./math/pow_mod.cpp)
 - [m の n 乗を繰り返し二乗法で計算する](./math/pow_mod_2.cpp)
 - [2 の n 乗 (mint) を計算する（ACL）](./math/calc_nth_power.cpp)
