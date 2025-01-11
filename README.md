@@ -241,6 +241,7 @@ AtCoder等の競技プログラミングで使うためのスニペット、ラ�
 ### mod
 
 - [割り切れる区間を求める](./math/dividable_section.cpp)
+- [現在の数の余りと新しい桁数から新しい余りを計算する](./math/calc_new_mod.cpp)
 
 ### 和
 
