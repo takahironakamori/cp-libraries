@@ -71,6 +71,8 @@ AtCoder等の競技プログラミングで使うためのスニペット、ラ�
 
 - [ビット演算](./bit/bit_operation.cpp)
 
+&nbsp;
+
 ## 日付・時間
 
 - [うるう年判定](./datetime/is_leap_year.cpp)
