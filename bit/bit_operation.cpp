@@ -29,5 +29,17 @@ int main() {
   cout << bitset<32>(x1) << endl;
   cout << bitset<32>(x2) << endl;
   cout << bitset<32>(x3) << endl;
+
+  ll a, b;
+  cin >> a >> b;
+
+  // AND(論理積)
+  cout << bitset<32>(a & b) << endl;
+
+  // OR(論理和)
+  cout << bitset<32>(a | b) << endl;
+
+  // XOR(排他的論理和)
+  cout << bitset<32>(a ^ b) << endl;
   return 0;
 }
