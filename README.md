@@ -90,8 +90,8 @@ AtCoder等の競技プログラミングで使うためのスニペット、ラ�
 
 ## 再帰関数
 
--[全パターン列挙 - N人をグループに分ける](./recursion/enumerate_all_groupings.cpp)
--[パターン列挙 - N人をT個のグループに分ける](./recursion/enumerate_groupings.cpp)
+- [全パターン列挙 - N人をグループに分ける](./recursion/enumerate_all_groupings.cpp)
+- [パターン列挙 - N人をT個のグループに分ける](./recursion/enumerate_groupings.cpp)
 
 &nbsp;
 
