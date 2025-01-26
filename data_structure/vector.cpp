@@ -61,7 +61,8 @@ int main() {
   // 配列を降順に並び替える
   sort(A.rbegin(), A.rend());
 
-  // 配列内の重複している要素を消す
+  // 配列内の重複している要素を消す（sort してからやる）
+  sort(A.begin(), A.end());
   A.erase(unique(A.begin(), A.end()), A.end());
 
   // 配列をvで埋める
