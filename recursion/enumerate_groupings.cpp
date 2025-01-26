@@ -11,6 +11,9 @@ using P = pair<int, int>;
 // const ll INF = 1LL << 62;
 // const int INF = 1001001001;
 
+/**
+ * N人 を T 個のグループに分けた時のパターンを列挙する
+ */
 int N, T;
 vector<vector<int>> teams;
 
