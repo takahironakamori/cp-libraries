@@ -18,7 +18,6 @@ using P = pair<int, int>;
 int N;
 void dfs(int i, vector<vector<int>> groups) {
   if(i == N) {
-    cnt++;
     return;
   }
   
