@@ -16,10 +16,11 @@ random_device rd;
 mt19937 gen(rd());
 vector<int> shuffleNumbers(int cnt) {
   vector<int> v(cnt);
-  rep(i, cnt) {
-    v[i] = i;
+  iota(v.begin(), v.end(), 0);
+  for (int i = cnt - 1; i > 0; --i) {
+    uniform_int_distribution<int> dist(0, i);
+    swap(v[i], v[dist(gen)]);
   }
-  shuffle(v.begin(), v.end(), gen);
   return v;
 }
 
