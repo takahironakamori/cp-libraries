@@ -13,7 +13,7 @@ using P = pair<int, int>;
 
 // start 以上、end 以下でランダムなintを返す
 random_device rd;
-default_random_engine eng(rd());
+mt19937 eng(rd());
 int generateRandom(int start, int end) {
   uniform_int_distribution<int> distr(start, end);
   return distr(eng);
