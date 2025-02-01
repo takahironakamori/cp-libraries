@@ -318,6 +318,7 @@ AtCoder等の競技プログラミングで使うためのスニペット、ラ�
 - [指定した txt ファイルを読み込む](./heuristic/import_file.cpp)
 - [txt ファイルに出力する](./heuristic/export_file.cpp)
 - [start 以上、end 以下でランダムな int を返す](./heuristic/generate_ramdom.cpp)
+- [0 から cnt - 1 までをランダムに並び替える](./heuristic/shuffle_numbers.cpp)
 
 ### 局所探索法
 
