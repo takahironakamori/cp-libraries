@@ -330,6 +330,7 @@ AtCoder等の競技プログラミングで使うためのスニペット、ラ�
 ### 焼きなまし法
 
 - [焼きなまし法の例](./heuristic/example_sa.cpp)
+- [焼きなまし法の勉強](./heuristic/example_sa2.cpp)
 
 ### ビームサーチ
 
