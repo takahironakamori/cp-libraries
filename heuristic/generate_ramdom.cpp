@@ -14,7 +14,7 @@ using P = pair<int, int>;
 // start 以上、end 以下でランダムなintを返す
 random_device rd;
 default_random_engine eng(rd());
-int generate_random(int start, int end) {
+int generateRandom(int start, int end) {
   uniform_real_distribution<double> distr(start - 1, end);
   return ceil(distr(eng));
 }
@@ -22,7 +22,7 @@ int generate_random(int start, int end) {
 int main() {
 
   // 10 以上 100 以下のランダムな数を生成する。
-  int res = generate_random(10, 100);
+  int res = generateRandom(10, 100);
 
   cout << res << endl;
   return 0;
