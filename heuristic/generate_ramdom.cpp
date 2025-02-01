@@ -15,8 +15,8 @@ using P = pair<int, int>;
 random_device rd;
 default_random_engine eng(rd());
 int generateRandom(int start, int end) {
-  uniform_real_distribution<double> distr(start - 1, end);
-  return ceil(distr(eng));
+  uniform_int_distribution<int> distr(start, end);
+  return distr(eng);
 }
 
 int main() {
