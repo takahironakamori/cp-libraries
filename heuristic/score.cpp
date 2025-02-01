@@ -66,67 +66,82 @@ class Score{
       current_score_ = 0;
     }
 
-    // 今の得点を全て更新する
+    // 今の得点を更新する
     void updateCurrentScore(const vector<int>& v) {
-      int n_ = v.size();
-      current_score_ = 0;
-      rep(i, n_) {
-        current_score_details_[i] = v[i];
-        current_score_ += v[i];
+      this->current_score_details_ = v;
+      for(auto i: this->current_score_details_) {
+        this->current_score_ += i;
       }
     }
 
     // 今の得点が最高点より高い場合は、最高点を更新する
     void updateBestScoreIfCurrentHigher() {
-      if(best_score_ < current_score_) {
-        cout << "Updated Best Score" << endl;
-        best_score_ = current_score_;
-        best_score_details_ = current_score_details_;
-      } else {
-        cout << "Not Best Score" << endl;
+      if(this->best_score_ < this->current_score_) {
+        this->best_score_ = this->current_score_;
+        this->best_score_details_ = this->current_score_details_;
       }
     }
 
     // 指定するターゲットを得点を更新して、得点を仮計算する
     void excludeFromBestScore(const vector<P>& targets) {
-      temp_score_ = best_score_;
-      temp_score_details_ = targets;
+      this->temp_score_ = this->best_score_;
+      this->temp_score_details_ = targets;
       int n_ = targets.size();
       rep(i, n_) {
         int target_ = targets[i].first;
         int new_score_ = targets[i].second;
-        int prev_score_ = best_score_details_[target_];
-        temp_score_ -= prev_score_;
-        temp_score_ += new_score_;
+        int prev_score_ = this->best_score_details_[target_];
+        this->temp_score_ -= prev_score_;
+        this->temp_score_ += new_score_;
       }
     }
 
     // 仮計算した得点が最高点より高い場合は、最高点を更新する
     void updateBestScoreIfTempHigher() {
-      if(best_score_ < temp_score_) {
-        cout << "Updated Best Score" << endl;
-        best_score_ = temp_score_;
+      if(this->best_score_ < this->temp_score_) {
+        this->best_score_ = this->temp_score_;
 
         // 内訳を更新する
-        int n_ = temp_score_details_.size();
+        int n_ = this->temp_score_details_.size();
         rep(i, n_) {
-          int target_ = temp_score_details_[i].first;
-          int new_score_ = temp_score_details_[i].second;
-          best_score_details_[target_] = new_score_;
+          int target_ = this->temp_score_details_[i].first;
+          int new_score_ = this->temp_score_details_[i].second;
+          this->best_score_details_[target_] = new_score_;
         }
-      } else {
-        cout << "Not Best Score" << endl;
+      }
+    }
+
+    // 焼きなまし法で更新する
+    void simulatedAnnealing() {
+      double T_0 = 3000.0;  // 初期温度（大きい方が許容範囲が広がる）
+      double p = (double)(clock() - TIMER_START) / CLOCKS_PER_SEC / TIME_LIMIT;
+      double C = 5.0 + 5.0 * p;
+      double temp = T_0 * (1.0 - p);
+      double prob = exp((this->temp_score_ - this->best_score_) / temp);
+      if (this->temp_score_ > this->best_score_ || generateRandom(0, 1000000) / 1000000.0 < prob) {
+        this->best_score_ = this->temp_score_;
+
+        // 内訳を更新する
+        int n_ = this->temp_score_details_.size();
+        rep(i, n_) {
+          int target_ = this->temp_score_details_[i].first;
+          int new_score_ = this->temp_score_details_[i].second;
+          this->best_score_details_[target_] = new_score_;
+        }
       }
     }
 
     // Debug : 最高得点を出力する
     void showBestScore() {
-      cout << "Best Score : " << best_score_ << endl;
-      int n_ = best_score_details_.size();
+      /*
+      cout << "Best Score : " << this->best_score_ << "  ";
+      int n_ = this->best_score_details_.size();
       rep(i, n_) {
-        cout << i << " : " << best_score_details_[i] << " ";
+        cout << i << " : " << this->best_score_details_[i] << " ";
       } 
       cout << endl;
+      */
+      cout << "Best Score : " << this->best_score_ << endl;
     }
 };
 
