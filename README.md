@@ -171,6 +171,7 @@ AtCoder等の競技プログラミングで使うためのスニペット、ラ�
 - [DFS（基本）](./graph/dfs.cpp)
 - [DFS（連結成分の大きさを数える）](./graph/dfs_size.cpp)
 - [DFS（オイラーツアー）](./graph/dfs_euler_tour.cpp)
+- [DFS (連結成分ごとの頂点数と辺の数を数える)](./graph/dfs_count_vertices_and_edges.cpp)
 
 ### 最短経路
 
