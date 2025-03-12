@@ -170,6 +170,7 @@ AtCoder等の競技プログラミングで使うためのスニペット、ラ�
 - [BFS（グリッド）](./graph/bts_grid.cpp)
 - [01 BFS](./graph/bfs_01.cpp)
 - [DFS（基本）](./graph/dfs.cpp)
+- [DFS（ラムダ式で書いた例）](./graph/dfs_lambda.cpp)
 - [DFS（連結成分の大きさを数える）](./graph/dfs_size.cpp)
 - [DFS（オイラーツアー）](./graph/dfs_euler_tour.cpp)
 - [DFS (連結成分ごとの頂点数と辺の数を数える)](./graph/dfs_count_vertices_and_edges.cpp)
