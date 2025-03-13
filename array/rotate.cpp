@@ -35,7 +35,7 @@ vector<string> rotate90(vector<string>& v) {
   return res;
 }
 
-// 時計回りに 180 度回す(N * Nのみ)
+// 時計回りに 180 度回す
 vector<string> rotate180(vector<string>& v) {
   int n = v.size();
   vector<string> res(n);
