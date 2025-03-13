@@ -59,6 +59,12 @@ AtCoder等の競技プログラミングで使うためのスニペット、ラ�
 
 &nbsp;
 
+## 円環
+
+- [円環で壁がある場合の最短距離を測る](./circular_ring/calc_dist_with_wall.cpp)
+
+&nbsp;
+
 ## 変換
 
 - [文字列を数値に変換する](./convert/stoi.cpp)
