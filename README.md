@@ -61,6 +61,7 @@ AtCoder等の競技プログラミングで使うためのスニペット、ラ�
 
 ## 円環
 
+- [2点間の距離を測る](./circular_ring/calc_dist.cpp)
 - [円環で壁がある場合の最短距離を測る](./circular_ring/calc_dist_with_wall.cpp)
 
 &nbsp;
