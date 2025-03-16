@@ -11,15 +11,15 @@ using P = pair<int, int>;
 // const ll INF = 1LL << 62;
 // const int INF = 1001001001;
 
-/**
- * size ... 円環の大きさ
- */
-ll calc_dist(ll size, ll from, ll to) {
-  if (from <= to) {
-    return to - from; 
-  } else {
-    return to + size - from;
-  }
+// N: 円環の点の数
+// A, B: 計算する2つの点 (1-based index)
+int shortest_distance(int N, int A, int B) {
+  // 時計回りの距離
+  int clockwise = (B - A + N) % N;
+  // 反時計回りの距離
+  int counter_clockwise = (A - B + N) % N;
+  
+  return min(clockwise, counter_clockwise);
 }
 
 int main() {
@@ -29,6 +29,6 @@ int main() {
   int from, to;
   cin >> from >> to;
 
-  cout << calc_dist(N, from, to) << endl;
+  cout << shortest_distance(N, from, to) << endl;
   return 0;
 }
