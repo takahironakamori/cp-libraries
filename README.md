@@ -28,6 +28,7 @@ AtCoder等の競技プログラミングで使うためのスニペット、ラ�
 ## 文字列
 
 - [ある文字を別の文字にすべて置き換える](./string/replace_all.cpp)
+- [ある文字だけである長さの文字列を作る](./string/create_string.cpp)
 - [大文字を小文字に変える](./string/to_lowercase.cpp)
 - [小文字を大文字に変える](./string/to_uppercase.cpp)
 - [ASCIIコードを取得する](./string/get_aßscii.cpp)
