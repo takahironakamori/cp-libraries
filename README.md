@@ -285,6 +285,7 @@ AtCoder等の競技プログラミングで使うためのスニペット、ラ�
 ### 幾何
 
 - [ラジアンを度に変換する](./math/radians_to_degrees.cpp)
+- [点 p1 から原点の角度を求める](./math/calc_angle.cpp)
 - [点 p1 と点 p2 の距離を計算する](./math/calc_dist.cpp)
 - [点 p1 と点 p2 を使った正方形の座標（p3, p4）を返す](./math/calc_square_using_points.cpp)
 - [2 本の線分が交わっているかをチェックする](./math/check_cross.cpp)
