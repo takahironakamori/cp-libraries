@@ -182,6 +182,11 @@ AtCoder等の競技プログラミングで使うためのスニペット、ラ�
 - [DFS（オイラーツアー）](./graph/dfs_euler_tour.cpp)
 - [DFS (連結成分ごとの頂点数と辺の数を数える)](./graph/dfs_count_vertices_and_edges.cpp)
 
+### 閉路検知
+
+- [閉路検知（Union-Find）](./graph/cycle_detection_dsu.cpp)
+- [閉路検知（DFS）](./graph/cycle_detection_dfs.cpp)
+
 ### 最短経路
 
 - [ダイクストラ法](./graph/dijkstra.cpp)
