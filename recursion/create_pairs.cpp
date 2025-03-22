@@ -13,7 +13,7 @@ using P = pair<int, int>;
 
 /**
  * createPairs()
- * 1 から N までで、
+ * 0 から N-1 まで（0インデックス）で、
  * 2人組になる組み合わせを全部作る。
  * [v1,v2] としたとき v1 < v2 になる。
  */
@@ -23,21 +23,21 @@ vector<P> pairs;
 vector<vector<P>> result;
 
 void createPairs() {
-  if((int)pairs.size() == N / 2) {
+  if ((int)pairs.size() == N / 2) {
     result.push_back(pairs);
     return;
   }
-  int l = 0;
-  for(int i = 1; i <= N; ++i) {
-    if(!used[i]) {
+  int l = -1;
+  for (int i = 0; i < N; ++i) {
+    if (!used[i]) {
       l = i;
       break;
     }
   }
   used[l] = true;
-  for(int i = 1; i <= N; ++i) {
-    if(!used[i]) {
-      pairs.push_back(make_pair(l, i));
+  for (int i = 0; i < N; ++i) {
+    if (!used[i]) {
+      pairs.push_back({l, i});
       used[i] = true;
       createPairs();
       used[i] = false;
@@ -45,7 +45,6 @@ void createPairs() {
     }
   }
   used[l] = false;
-  return;
 }
 
 int main() {
