@@ -111,6 +111,7 @@ AtCoder等の競技プログラミングで使うためのスニペット、ラ�
 ### 全探索
 
 - [bit全探索](./search/bit_search.cpp)
+- [bit全探索の0,1,2,..N版](./search/extended_bit_search.cpp)
 - [順列全探索（数値）](./search/next_permutation_num.cpp)
 - [順列全探索（文字列）](./search/next_permutation_str.cpp)
 
