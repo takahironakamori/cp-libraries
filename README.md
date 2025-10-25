@@ -271,6 +271,7 @@ AtCoder等の競技プログラミングで使うためのスニペット、ラ�
 
 ### 和
 
+- [xの各桁の和を計算する](./math/calc_sum_digit.cpp)
 - [(ax + b) \ m の合計を計算する（ACL）](./math/floor_sum.cpp)
 - [0 から v までの XOR を計算する](./math/calc_xor.cpp)
 - [a の 0 乗から a の b 乗までの合計 (mint) を計算する（ACL）](./math/calc_sum_of_nth_power.cpp)
