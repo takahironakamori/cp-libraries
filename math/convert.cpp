@@ -24,9 +24,15 @@ string f2(ll v, int n) {
     return "0";
   }
   string res = "";
+  /*
   while(0 < v) {
     res = to_string(v % n) + res;
     v = v / n;
+  }
+  */
+  while(v) {
+    res += static_cast<char>('0' + static_cast<int>(v % n));
+    v /= n;
   }
   return res;
 }

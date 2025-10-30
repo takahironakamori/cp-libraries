@@ -41,6 +41,7 @@ AtCoder等の競技プログラミングで使うためのスニペット、ラ�
 - [文字列から空白を削除する](./string/remove_space.cpp)
 - [文字列をハッシュで考える](./string/hash.cpp)
 - [文字列が回文か否かを返す](./string/is_palindrome.cpp)
+- [start <= end までの回文数（10進法, string）を作る](./string/createPalindromicNumbers.cpp)
 - [小さい方から N 番目の回文数を作る](./string/create_palindrome.cpp)
 - [s と t で先頭から見て何文字目まで一致するかを返す](./string/count_matching_prefix.cpp)
 - [s と t で後ろから見て何文字目まで一致するかを返す](./string/count_matching_suffix.cpp)

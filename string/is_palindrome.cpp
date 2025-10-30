@@ -13,8 +13,8 @@ using P = pair<int, int>;
 
 // 文字列が回文か否かを返す
 bool isPalindrome(string s) {
-  int n = s.size();
-  int center = s.size() / 2;
+  int n = (int)s.size();
+  int center = (int)s.size() / 2;
   for(int i = 0; i < center; ++i) {
     if (s[i] != s[n - 1 - i]) {
       return false;
