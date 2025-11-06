@@ -29,19 +29,19 @@ int main() {
   
   vector<int> B = {100, 200, 300, 300, 400, 400, 500};
 
-  int test1 = lower_bound(B.begin(), B.end(), 0) - B.begin();
+  int test1 = static_cast<int>(lower_bound(B.begin(), B.end(), 0) - B.begin());
   cout << test1 << endl; // 0 -> B[0] = 100
 
-  int test2 = lower_bound(B.begin(), B.end(), 200) - B.begin();
+  int test2 = static_cast<int>(lower_bound(B.begin(), B.end(), 200) - B.begin());
   cout << test2 << endl; // 1 -> B[1] = 200
 
-  int test3 = lower_bound(B.begin(), B.end(), 400) - B.begin();
+  int test3 = static_cast<int>(lower_bound(B.begin(), B.end(), 400) - B.begin());
   cout << test3 << endl; // 4 -> B[4] = 400
 
-  int test4 = lower_bound(B.begin(), B.end(), 500) - B.begin();
+  int test4 = static_cast<int>(lower_bound(B.begin(), B.end(), 500) - B.begin());
   cout << test4 << endl; // 6 -> B[6] = 500
 
-  int test5 = lower_bound(B.begin(), B.end(), 600) - B.begin();
+  int test5 = static_cast<int>(lower_bound(B.begin(), B.end(), 600) - B.begin());
   cout << test5 << endl; // 7 -> B[7] はない
   
   // 400以上は何個あるか？
