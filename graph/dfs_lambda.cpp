@@ -1,9 +1,11 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <algorithm>
 #include <atcoder/all>
 using namespace std;
 using namespace atcoder;
 using ll = long long;
-using P = pair<int, ll>;
+using P = pair<int, int>;
 #define rep(i, n) for(int i = 0; i < (n); ++i)
 // using mint = modint998244353;
 // using mint = modint1000000007;
@@ -11,50 +13,30 @@ using P = pair<int, ll>;
 // const ll INF = 1LL << 62;
 // const int INF = 1001001001;
 
+
 int main() {
-  int N, K;
-  cin >> N >> K;
-  vector<vector<int>> graph(N);
-  rep(i, N-1) {
-    int A, B;
-    cin >> A >> B;
-    A--;
-    B--;
-    graph[A].push_back(B);
-    graph[B].push_back(A);
-  }
-  vector<int> V(K);
-  rep(i, K) {
-    cin >> V[i];
-    V[i]--;
+  int N, K, X;
+  cin >> N >> K >> X;
+  vector<string> S(N);
+  rep(i, N) {
+    cin >> S[i];
   }
 
-  vector<bool> visited(N);
-  rep(i, K) {
-    visited[V[i]] = true;
-  }
+  vector<string> ans;
 
-  vector<int> cnt(N);
-  auto dfs = [&](auto dfs, int v, int p) -> void {
-    if(visited[v]) {
-      cnt[v]++;
+  auto dfs = [&](auto dfs, int cnt, string str) -> void {
+    if(cnt == K) {
+      ans.push_back(str);
+      return;
     }
-    for(int i:graph[v]) {
-      if(i == p) {
-        continue;
-      }
-      dfs(dfs, i, v);
-      cnt[v] += cnt[i];
+
+    rep(i, N) {
+      dfs(dfs, cnt+1, str + S[i]);
     }
   };
-  dfs(dfs, V[0], -1);
-
-  int ans = 0;
-  rep(i, N) {
-    if(0 < cnt[i]) {
-      ans++;
-    }
-  }
-  cout << ans << endl;
+  dfs(dfs, 0, "");
+  
+  sort(ans.begin(), ans.end());
+  cout<< ans[X-1] << endl;
   return 0;
 }
