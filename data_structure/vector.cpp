@@ -65,6 +65,16 @@ int main() {
   sort(A.begin(), A.end());
   A.erase(unique(A.begin(), A.end()), A.end());
 
+  // [firstからmiddleまでを後ろへ移動させ、middleの次からlastまでを前へ移動させる]
+  // rotate(first, middle, last);
+  // vector<int> v = {1, 2, 3, 4, 5};
+  // rotate(v.begin(), v.begin() + 2, v.end());
+  // -> {3, 4, 5, 1, 2}
+  int a = 0;
+  int b = 1;
+  int c = 3;
+  rotate(A.begin()+a, A.begin()+b, A.begin()+c);
+
   // 配列をvで埋める
   fill(A.begin(), A.end(), v);
   
